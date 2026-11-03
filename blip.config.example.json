@@ -1,0 +1,24 @@
+{
+  "headless": false,
+  "browserChannel": "msedge",
+  "manualLogin": true,
+  "outputRoot": "./saida",
+  "storageState": ".auth/session.json",
+  "variablesVerified": false,
+  "variablesComplete": false,
+  "staticListingVerified": false,
+  "selectors": {
+    "email": "#email-input input",
+    "password": "#password-input input",
+    "loginSubmit": "#login-button",
+    "authenticated": ".services-list",
+    "listingReady": ".services-list",
+    "formReady": "#variablesForm",
+    "variableKeyInput": "input[name=key]",
+    "variableValueInput": "input[name=value]",
+    "exportAction": "li[ng-click='$ctrl.exportFlow()']",
+    "exportSteps": [
+      "bds-tab-group.builder-sidebar-tabs .tab_group__header__itens__item:has-text(\"Versões\")"
+    ]
+  }
+}
